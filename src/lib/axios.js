@@ -16,10 +16,10 @@ axiosInstance.interceptors.request.use(
     config.withCredentials = true;
     
     // Add any auth tokens from localStorage if needed
-    const token = localStorage.getItem('authToken');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
+    // const token = localStorage.getItem('authToken');
+    // if (token) {
+    //   config.headers.Authorization = `Bearer ${token}`;
+    // }
     
     return config;
   },
